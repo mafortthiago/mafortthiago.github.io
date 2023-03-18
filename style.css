@@ -87,3 +87,29 @@ footer{
     width: 133px;
     margin-bottom: 3px;
 }
+@media (max-width: 660px) {
+    aside{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        
+
+    }
+    main{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        
+    }
+    aside ul{
+        display: flex;
+        margin: 0;;
+        align-items: center;
+    }
+    aside li{
+        margin: 2px 4px;
+        padding: 4px;
+    }
+    .descricao{
+        
+        height: 80vw;
+    }
+}
