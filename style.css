@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 34px;
+    font-weight: bold; 
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./src/img/imagem-noite.jpg);
+    background-size: cover;
+    color: #F2E6DF;
+    text-align: center;
+    
+}
+header span{
+    color: #F2845C;
+}
+header a{
+    text-decoration: none;
+    color: #F2E6DF;
+}
+main{
+    background-color: #F2E6DF;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+aside{
+    background-color: rgb(0, 0, 0);
+    background-image: url(./src/img/imagem-noite.jpg);
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    
+}
+aside a{
+    text-decoration: none;
+    color:#F2845C;
+    text-shadow:#F2E6DF -0.3px -0.3px; 
+    font-weight: bold;
+}
+aside li{
+    list-style-type: none;
+    margin: 20px 0;
+}
+aside ul{
+    margin-top: 10px;
+}
+footer{
+    background-color: #1C2526;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-image: url(./src/img/imagem-noite.jpg);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2E6DF;
+}
+.pag{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+.descricao{
+    margin: 18px;
+    height: 40vw;
+}
+
+.descricao h2{
+    background-color: #F2845C;
+    color: #1C2526;
+    padding: 6px ;
+    border-radius: 3px;
+    width: 133px;
+    margin-bottom: 3px;
+}
