@@ -4,6 +4,7 @@ const aviso = document.querySelector('.fim-de-jogo');
 const pontuacao = document.querySelector('h3');
 const ppontos = document.querySelector('.pontuacao');
 let pontos = 0;
+let maiorpontuacao = 0;
 
 const pular = () => {
     gato.classList.add('pulo');
@@ -29,8 +30,10 @@ const loop = setInterval(() =>{
         aviso.style.display = 'flex';
         clearInterval(loop);
         pontuacao.innerHTML = ``;
-
-        ppontos.innerHTML = `Sua pontuação foi: ${pontos}`;
+        if(pontos > maiorpontuacao){
+            maiorpontuacao = pontos;
+        }
+        ppontos.innerHTML = `Sua pontuação foi: ${maiorpontuacao}`;
         document.addEventListener('click', recomeçar);
     }
 
