@@ -4,7 +4,8 @@ const aviso = document.querySelector('.fim-de-jogo');
 const pontuacao = document.querySelector('h3');
 const ppontos = document.querySelector('.pontuacao');
 let pontos = 0;
-let maiorpontuacao = 0;
+let maiorpontuacao = sessionStorage.getItem('maiorpontuacao');
+
 
 const pular = () => {
     gato.classList.add('pulo');
@@ -19,7 +20,7 @@ const recomeçar = () => {
 const loop = setInterval(() =>{
     const posicaoBanheira = banheira.offsetLeft;
     const posicaoGato = +window.getComputedStyle(gato).bottom.replace('px','');
-    pontos +=  Math.round(posicaoBanheira/300);
+    pontos +=  Math.round(posicaoBanheira/600);
     pontuacao.innerHTML = `PONTUAÇÃO: ${pontos}`;
     if(posicaoBanheira <= 87 && posicaoBanheira > 0 && posicaoGato < 50){
         banheira.style.animation = 'none';
@@ -27,13 +28,15 @@ const loop = setInterval(() =>{
 
         gato.style.animation = 'none';
         gato.style.bottom = `${posicaoGato}px`;
+        if(pontos > maiorpontuacao) {
+            sessionStorage.setItem('maiorpontuacao', pontos);
+        }
+        maiorpontuacao = sessionStorage.getItem('maiorpontuacao');
+        ppontos.innerHTML = `Sua pontuação foi: ${pontos}<br>
+        Sua maior pontuação: ${maiorpontuacao}`;
         aviso.style.display = 'flex';
         clearInterval(loop);
         pontuacao.innerHTML = ``;
-        if(pontos > maiorpontuacao){
-            maiorpontuacao = pontos;
-        }
-        ppontos.innerHTML = `Sua pontuação foi: ${maiorpontuacao}`;
         document.addEventListener('click', recomeçar);
     }
 
