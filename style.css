@@ -26,6 +26,18 @@ h3{
 a{
     text-decoration: none;
 }
+.botao-download {
+    background-color: #1C2526;
+    border: none;
+    color: #F2845C;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
 header{
     grid-column-start: 1;
     grid-column-end: 6;
