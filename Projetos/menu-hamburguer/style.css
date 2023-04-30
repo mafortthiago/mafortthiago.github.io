@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(159, 203, 159);
+    background-image: url(./src/img/fundo.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    opacity: 0.8;
+}
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(11, 19, 11);
+    height: 8vh;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin: 0 10px;
+    list-style-type: none;
+}
+.hamburguer{
+    display: none;
+}
+.line{
+    background-color: white;
+    height: 2px;
+    width: 28px;
+    margin: 5px 0;
+}
+.hamburguer:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media (max-width:890px) {
+    .hamburguer{
+        display: block;
+    }
+    .menu{
+        flex-direction: column;
+        display: none;
+        background-color: rgb(11, 19, 11);
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 40%;
+        animation: anima-menu 0.6s ease-in-out;
+    }
+    .menu li{
+        margin: 20px auto;
+        animation: anima-li 0.8s ease-out;
+    }
+    
+    .menu.desativa{
+    animation: anima-menu-saida 0.3s ease-in-out;
+    
+}
+}
+@keyframes anima-menu{
+    0%{
+        right: -40%;
+    }
+    100%{
+        right: 0;  
+    }    
+    
+}
+@keyframes anima-li{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;  
+    }    
+    
+}
+@keyframes anima-menu-saida{
+    0%{
+        right: 0;
+        opacity: 1;
+    }
+    100%{
+        right: -40%;
+        opacity: 0;
+    }    
+}
