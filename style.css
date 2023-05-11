@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+a{
+    text-decoration: none;
+}
 h1{
     font-size: 34px;
     font-weight: bold; 
@@ -13,19 +16,9 @@ h3 a{
     color:#F2845C;
     border-radius: 3px;
     padding: 2px;
-}
-h3{
     margin-top: 6px;
 }
-.amor a{
-    background-image: url(./src/img/fundo_coraçoes.jpg) ;
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-a{
-    text-decoration: none;
-}
+
 header{
     grid-column-start: 1;
     grid-column-end: 6;
