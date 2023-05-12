@@ -1,0 +1,17 @@
+.descricao {
+    display: flex;
+    flex-direction: column;
+}
+.link-projetos {
+    margin: 10px;
+}
+.projeto {
+    margin: 15px 0;
+}
+.projeto a {
+    padding: 5px;
+}
+.projeto a:hover {
+    color: #d96439;
+    box-shadow: 0px 0px 6px 1px #d96439;
+}
