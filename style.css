@@ -1,25 +1,26 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-a{
+a {
     text-decoration: none;
 }
-h1{
+h1 {
     font-size: 34px;
-    font-weight: bold; 
+    font-weight: bold;
 }
-h3 a{
-    background-color:#1C2526;
-    color:#F2845C;
+h3 a {
+    background-color: #1c2526;
+    color: #f2845c;
     border-radius: 3px;
     padding: 2px;
     margin-top: 6px;
 }
 
-header{
+header {
     grid-column-start: 1;
     grid-column-end: 6;
     height: 70px;
@@ -28,54 +29,56 @@ header{
     align-items: center;
     background-image: url(./src/img/imagem-noite.jpg);
     background-size: cover;
-    color: #F2E6DF;
+    color: #f2e6df;
     text-align: center;
-    
 }
-header span{
-    color: #F2845C;
+header span {
+    color: #f2845c;
 }
-header a{
+header a {
     text-decoration: none;
-    color: #F2E6DF;
+    color: #f2e6df;
 }
-main{
-    background-color: #1C2526;
-    color: #F2E6DF;
+main {
+    background-color: transparent;
+    color: #f2e6df;
     position: relative;
     overflow: hidden;
     grid-column-start: 2;
     grid-column-end: 6;
 }
-.items{
+.items {
     position: absolute;
     display: flex;
+    background-color: #1c2526;
+    height: 100vh;
+    z-index: -1;
 }
-.items-div{
+.items-div {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     margin: 0 5px;
-    background-color: #F2845C;
-    box-shadow: 0px 0px 50px 8px #F2845C;
+    background-color: #f2845c;
+    box-shadow: 0px 0px 50px 8px #f2845c;
     animation: anima-fundo calc(270s / var(--a)) ease-in-out infinite;
 }
-.items-div:nth-of-type(even){
+.items-div:nth-of-type(even) {
     background-color: #4d6669;
     box-shadow: 0px 0px 50px 8px #4d6669;
 }
-@keyframes anima-fundo{
-    0%{
+@keyframes anima-fundo {
+    0% {
         transform: translateY(100vh) scale(0);
     }
-    50%{
+    50% {
         transform: translateY(50vh) scale(0.8);
     }
-    100%{
+    100% {
         transform: translateY(-10vh) scale(0);
     }
 }
-aside{
+aside {
     background-color: rgb(0, 0, 0);
     background-image: url(./src/img/imagem-noite.jpg);
     background-size: cover;
@@ -85,23 +88,22 @@ aside{
     grid-row-end: 3;
     display: flex;
     justify-content: center;
-    
 }
-aside a{
+aside a {
     text-decoration: none;
-    color:#F2845C;
-    text-shadow:#F2E6DF -0.3px -0.3px; 
+    color: #f2845c;
+    text-shadow: #f2e6df -0.3px -0.3px;
     font-weight: bold;
 }
-aside li{
+aside li {
     list-style-type: none;
     margin: 20px 0;
 }
-aside ul{
+aside ul {
     margin-top: 10px;
 }
-footer{
-    background-color: #1C2526;
+footer {
+    background-color: #1c2526;
     grid-column-start: 1;
     grid-column-end: 6;
     background-image: url(./src/img/imagem-noite.jpg);
@@ -109,31 +111,30 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F2E6DF;
+    color: #f2e6df;
 }
-.pag{
+.pag {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    
+    grid-template-columns: repeat(5, 1fr);
 }
-.descricao{
+.descricao {
     margin: 18px;
     height: 40vw;
 }
 
-.descricao h2{
-    background-color: #F2845C;
-    color: #1C2526;
-    padding: 6px ;
+.descricao h2 {
+    background-color: #f2845c;
+    color: #1c2526;
+    padding: 6px;
     border-radius: 3px;
     width: 133px;
     margin-bottom: 3px;
 }
 .botao-download {
-    background-color: #1C2526;
+    background-color: #1c2526;
     border: none;
-    color: #F2845C;
-    border: 1px solid #F2845C;
+    color: #f2845c;
+    border: 1px solid #f2845c;
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
@@ -141,30 +142,26 @@ footer{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
 @media (max-width: 660px) {
-    aside{
+    aside {
         grid-column-start: 1;
         grid-column-end: 6;
-        
-        
     }
-    main{
+    main {
         grid-column-start: 1;
         grid-column-end: 6;
-        
     }
-    aside ul{
+    aside ul {
         display: flex;
-        margin: 0;;
+        margin: 0;
         align-items: center;
     }
-    aside li{
+    aside li {
         margin: 2px 4px;
         padding: 4px;
     }
-    .descricao{
-        
+    .descricao {
         height: 80vw;
     }
 }
