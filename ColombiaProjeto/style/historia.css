@@ -1,0 +1,28 @@
+#img_01 {
+    width: 60%;
+    height: 239px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 17px 1.6% 17px 0;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.text-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 950px) {
+    main {
+        width: 100%;
+        padding: 5%;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    #img_01 {
+        width: 100%;
+    }
+}
