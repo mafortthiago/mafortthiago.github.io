@@ -1,18 +1,18 @@
 const tela = document.querySelector(".score");
 const divs = document.querySelectorAll(".hole");
 
-divs.forEach((div) => {
-  div.addEventListener("click", function () {
-    if (div.classList.contains("up")) {
-      let pontos = parseInt(tela.textContent);
+divs.forEach((div) => {//
+  div.addEventListener("click", function () {//
+    if (div.classList.contains("up")) {//
+      let pontos = parseInt(tela.textContent);//
       pontos++;
-      tela.textContent = pontos;
-      div.classList.remove("up");
+      tela.textContent = pontos;//
+      div.classList.remove("up");//
     }
   });
 });
 
-setInterval(function () {
+setInterval(function () {//
   const numdiv = Math.trunc(Math.random() * 6) + 1;
   const div = document.querySelector(`.hole${numdiv}`);
   div.classList.add("up");

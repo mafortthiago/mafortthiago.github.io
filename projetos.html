@@ -3,20 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="https://use.typekit.net/grg0vuw.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
+         <link rel="icon" href="src/img/logoTh.png" type="img">
         <link rel="stylesheet" href="projetos.css" />
-        <title>Página Inicial</title>
+        <title>Projetos</title>
     </head>
     <body class="pag">
-        <header>
-            <a href="index.html"
-                ><h1>Thiago <span> Mafort</span></h1></a
-            >
-        </header>
-        <main>
-            <section class="container">
-                <div class="items">
+        <div class="items">
                     <div class="items-div" style="--a: 22"></div>
                     <div class="items-div" style="--a: 42"></div>
                     <div class="items-div" style="--a: 12"></div>
@@ -59,46 +53,54 @@
                     <div class="items-div" style="--a: 132"></div>
                     <div class="items-div" style="--a: 31"></div>
                     <div class="items-div" style="--a: 89"></div>
-                </div>
-            </section>
-            <section class="descricao">
-                <section class="desc-title">
-                    <h2>Projetos</h2>
-                </section>
-                <section class="link-projetos">
+        </div>
+       <header>
+            <a href="index.html">
+                <h1>Thiago Mafort</h1>
+            </a>
+            <nav id="nav-header">
+                <ul>
+                    <li>
+                        <a href="index.html" class="link-nav">Sobre</a>
+                        <a href="projetos.html" class="link-nav">Projetos</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
+        <main>
+            <section class="projetos">
+                <h2 id="titulo-projeto">Projetos</h2>
                     <h3 class="projeto">
-                        <a href="./JogoJS/index.html"
+                        <a href="./JogoJS/index.html" class="link-projeto"
                             >Jogo gato correndo do banho</a
                         >
                     </h3>
                     <h3 class="projeto">
-                        <a href="./fundamentos_da_web/index_web.html"
+                        <a href="./fundamentos_da_web/index_web.html" class="link-projeto"
                             >Fundamentos da web</a
                         >
                     </h3>
-                    <h3 class="amor projeto">
-                        <a href="mensagem.html"
-                            >Se você for a Shara clique aqui!</a
-                        >
-                    </h3>
                     <h3 class="projeto">
-                        <a href="./Projetos/projetosjavascript.html"
+                        <a href="./Projetos/projetosjavascript.html" class="link-projeto"
                             >Mini projetos de javascript</a
                         >
                     </h3>
-                </section>
+                    <h3 class="projeto">
+                        <a href="./Projetos/Página sistema de vendas/index.html" class="link-projeto"
+                            >Projeto de vendas em java</a
+                        >
+                    </h3>
             </section>
         </main>
-        <aside>
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="historia.html">História</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </aside>
         <footer>
-            <p>Rodapé</p>
+            <h4>
+                Desenvolvido por: Thiago Mafort
+            </h4>
+            <div class="links-footer">
+                <p><a href="https://github.com/mafortthiago"  target="_blank">Github</a></p>
+                <p><a href="https://www.linkedin.com/in/thiago-mafort-5495241aa/" target="_blank">Linkedin</a></p>
+            </div>
         </footer>
     </body>
 </html>
