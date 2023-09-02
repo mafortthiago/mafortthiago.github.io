@@ -24,13 +24,11 @@ a:hover{
 }
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 259px 0 10%;
     align-items: center;
     background-color: rgb(11, 19, 11);
     height: 8vh;
-}
-.menu{
-    display: flex;
 }
 .menu li{
     margin: 0 10px;
@@ -50,19 +48,20 @@ nav{
     cursor: pointer;
 }
 
-@media (max-width:890px) {
     .hamburguer{
         display: block;
+        z-index: 100;
     }
     .menu{
+        position: relative;
+        top: 20vh;
         flex-direction: column;
         display: none;
         background-color: rgb(11, 19, 11);
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 40%;
+        width: 100%;
+        padding: 10px;
         animation: anima-menu 0.6s ease-in-out;
+        z-index: -1;
     }
     .menu li{
         margin: 20px auto;
@@ -72,14 +71,14 @@ nav{
     .menu.desativa{
     animation: anima-menu-saida 0.3s ease-in-out;
     
-}
+
 }
 @keyframes anima-menu{
     0%{
-        right: -40%;
+        top: 0;
     }
     100%{
-        right: 0;  
+        top: 20vh;  
     }    
     
 }
@@ -94,11 +93,11 @@ nav{
 }
 @keyframes anima-menu-saida{
     0%{
-        right: 0;
+        top: 0;
         opacity: 1;
     }
     100%{
-        right: -40%;
+        top: -40%;
         opacity: 0;
     }    
 }

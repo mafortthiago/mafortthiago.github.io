@@ -17,21 +17,23 @@ main{
 h1{
     margin: 10px;
 }
-.relogio-section{
-    border-radius: 400px;
+.relogio-section {
+    border-radius: 50%;
     box-shadow: 0px 0px 66px 21px rgba(51,22,51,1);
-    width: 400px;
-    height: 400px;
+    width: 32vw; 
+    height: 32vw; 
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("./src/img/fundo-relogio.png");
     background-size: cover;
 }
+
 #relogio-centro{
     background-color:  rgba(51,22,51,1);
     width: 12px;
     height: 12px;
+    
     border-radius: 50%;
     position: absolute;
     z-index: 1000;
@@ -69,8 +71,24 @@ h1{
     background: rgb(9, 0, 17);
     border: 1px solid rgba(51,22,51,1);
     color: rgb(93, 75, 93);
-    left: 12.5%;
+  top: 2%;
     border-radius: 100px;
     padding: 10px;
     cursor: pointer;
+}
+@media screen and (max-width: 993px){
+   .relogio-section{
+    width: 60vw;
+    height: 60vw;
+   }
+   #segundos{
+    height: 80px;
+   }
+   #minutos{
+    height: 56px;
+}
+#horas{
+    height: 42px;
+    width: 8px;
+}
 }
