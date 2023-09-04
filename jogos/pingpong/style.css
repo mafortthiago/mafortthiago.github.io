@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "relaway",sans-serif;
+}
+.inicio{
+    width: 400px;
+    height: 330px;
+    background-color: #0077b6;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    left: calc(50% - 200px);
+    padding: 30px;
+    position: absolute;
+    top: calc(50% - 165px);
+    z-index: 100;
+}
+.inicio h2{
+    margin: 10px;
+}
+.inicio p{
+    margin: 4px;
+}
+.inicio input{
+    width: 100%;
+    margin: 6px;
+    border: 0;
+    padding: 6px;
+    color: #0077b6;
+    border-radius: 6px;
+}
+.inicio input:hover{
+   background-color: #82c1e4;
+   cursor: pointer;
+}
+.desativa{
+    display: none;
+}
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 360px;
+    height: 180px;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 30px;
+    position: absolute;
+    top: calc(50% - 90px);
+    left: calc(50% - 180px);
+    background-color: #0077b6;
+    border: 1px solid white;
+    color: white;
+}
+.titulo-painel-final{
+    margin: 12px 0px;
+}
+#jogar-novamente{
+    padding: 6px;
+    color: #0077b6;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 12px;
+    background-color: white;
+}
+#jogar-novamente:hover{
+    background-color: #82c1e4;
+    cursor: pointer;
+}

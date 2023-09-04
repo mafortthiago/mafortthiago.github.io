@@ -7,6 +7,8 @@ main{
 }
 .container-projetos{
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .img-item{
     width: 100%;
