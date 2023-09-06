@@ -75,3 +75,14 @@ clip-path: polygon(100% 0, 100% 0, 92% 100%, 0 100%, 0 0);
     background-color: #212529;
     color: white;
 }
+@media (max-width:768px) {
+    main{
+        padding-top: 80px;
+    }
+    header{
+        padding: 36px;
+    }
+    h1{
+        font-size: 1.4em;
+    }
+}

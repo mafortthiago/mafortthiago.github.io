@@ -136,3 +136,14 @@ footer{
     color: #9ec1a3;
     text-decoration: none;
 }
+@media (max-width:768px) {
+    main{
+        padding-top: 80px;
+    }
+    header{
+        padding: 36px;
+    }
+    h1{
+        font-size: 1.4em;
+    }
+}
