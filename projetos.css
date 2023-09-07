@@ -92,7 +92,6 @@ header a:hover{
 }
 main{
     padding: 8% 4%;
-    
     height: 90vh;
 }
 #titulo-projeto{
@@ -138,7 +137,7 @@ footer{
 }
 @media (max-width:768px) {
     main{
-        padding-top: 80px;
+        padding-top: 136px;
     }
     header{
         padding: 36px;
