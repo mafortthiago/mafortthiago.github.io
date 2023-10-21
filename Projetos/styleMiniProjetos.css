@@ -1,5 +1,5 @@
 main {
-  padding: 2% 5%;
+  padding: 20px 5%;
   color: #212529;
 }
 body {
@@ -94,6 +94,6 @@ header {
 }
 @media (max-width: 420px) {
   main {
-    padding: 5% 0;
+    padding: 80px 0;
   }
 }
