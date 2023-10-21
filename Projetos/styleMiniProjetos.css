@@ -85,4 +85,7 @@ clip-path: polygon(100% 0, 100% 0, 92% 100%, 0 100%, 0 0);
     h1{
         font-size: 1.4em;
     }
+    .borda-item{
+        margin-right: 0;
+    }
 }
