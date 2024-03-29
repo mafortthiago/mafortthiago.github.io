@@ -1,99 +1,115 @@
 main {
-  padding: 20px 5%;
-  color: #212529;
+    padding: 20px 5%;
+    color: #212529;
 }
 body {
-  background-color: #fdfffc;
+    background-color: #fdfffc;
 }
 ::-webkit-scrollbar-track {
-  background-color: #9ec1a3;
+    background-color: #9ec1a3;
 }
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 18px;
+    width: 8px;
+    height: 18px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1c2526;
-  border: 1px solid #9ec1a3;
-  border-radius: 4px;
+    background: #1c2526;
+    border: 1px solid #9ec1a3;
+    border-radius: 4px;
 }
 header {
-  background-color: #212529;
+    background-color: #212529;
 }
 .title-main {
-  font-weight: bold;
-  margin: 6px 0 2px 0;
+    font-weight: bold;
+    margin: 6px 0 2px 0;
 }
 .container-projetos {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .img-item {
-  width: 100%;
-  height: 120px;
-  margin: 4px 0;
-  object-fit: cover;
+    width: 100%;
+    height: 120px;
+    margin: 4px 0;
+    object-fit: cover;
 }
 .titulo-item {
-  font-weight: 600;
-  margin: 6px 0;
+    font-weight: 600;
+    margin: 6px 0;
 }
 .btn-item {
-  background-color: #9ec1a3;
-  color: #212529;
-  border: 0px;
-  cursor: pointer;
-  padding: 4px;
-  margin: 3px 0;
-  width: 100%;
-  font-size: 1em;
+    background-color: #9ec1a3;
+    color: #212529;
+    border: 0px;
+    cursor: pointer;
+    padding: 4px;
+    margin: 3px 0;
+    width: 100%;
+    font-size: 1em;
+    align-self: flex-end;
 }
 .btn-item:hover {
-  background-color: #738975;
-  color: black;
+    background-color: #738975;
+    color: black;
 }
 .ultimo-btn-item {
-  -webkit-clip-path: polygon(100% 0, 100% 0, 86% 100%, 0 100%, 0 0);
-  clip-path: polygon(100% 0, 100% 0, 92% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(100% 0, 100% 0, 86% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 0, 92% 100%, 0 100%, 0 0);
 }
 .borda-item {
-  margin-top: 22px;
-  margin-right: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 340px;
-  padding: 10px 0;
-  background-color: #9ec1a3;
-  -webkit-clip-path: polygon(16% 0, 100% 0, 100% 84%, 84% 100%, 0 100%, 0 16%);
-  clip-path: polygon(16% 0, 100% 0, 100% 84%, 84% 100%, 0 100%, 0 16%);
+    margin-top: 22px;
+    margin-right: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    padding: 10px 0;
+    background-color: #9ec1a3;
+    -webkit-clip-path: polygon(
+        16% 0,
+        100% 0,
+        100% 84%,
+        84% 100%,
+        0 100%,
+        0 16%
+    );
+    clip-path: polygon(16% 0, 100% 0, 100% 84%, 84% 100%, 0 100%, 0 16%);
 }
 .item {
-  width: 320px;
-  padding: 36px;
-  border: 1px solid rgb(246, 246, 246);
-  -webkit-clip-path: polygon(16% 0, 100% 0, 100% 84%, 84% 100%, 0 100%, 0 16%);
-  clip-path: polygon(16% 0, 100% 0, 100% 84%, 84% 100%, 0 100%, 0 16%);
-  background-color: #212529;
-  color: white;
+    width: 320px;
+    height: 100%;
+    padding: 36px;
+    border: 1px solid rgb(246, 246, 246);
+    -webkit-clip-path: polygon(
+        16% 0,
+        100% 0,
+        100% 84%,
+        84% 100%,
+        0 100%,
+        0 16%
+    );
+    clip-path: polygon(16% 0, 100% 0, 100% 84%, 84% 100%, 0 100%, 0 16%);
+    background-color: #212529;
+    color: white;
 }
 @media (max-width: 768px) {
-  main {
-    padding-top: 80px;
-  }
-  header {
-    padding: 36px;
-  }
-  h1 {
-    font-size: 1.4em;
-  }
-  .borda-item {
-    margin-right: 0;
-  }
+    main {
+        padding-top: 80px;
+    }
+    header {
+        padding: 36px;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    .borda-item {
+        margin-right: 0;
+    }
 }
 @media (max-width: 420px) {
-  main {
-    padding: 80px 0;
-  }
+    main {
+        padding: 80px 0;
+    }
 }
